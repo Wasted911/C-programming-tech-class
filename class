@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+#define PI 3.142
+
+// Function to calculate the volume of the cylinder
+double volume(double radius, double height) {
+    return PI * radius * radius * height;
+}
+
+int main() {
+    double radius, height;
+
+    // Ask the user to input radius and height
+    cout << "Enter the radius of the cylinder: ";
+    cin >> radius;
+
+    cout << "Enter the height of the cylinder: ";
+    cin >> height;
+
+    // Calculate and display the volume of the cylinder
+    double result = volume(radius, height);
+    cout << "Volume of the cylinder: " << result << endl;
+
+    return 0;
+}
